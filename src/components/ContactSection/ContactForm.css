@@ -6,7 +6,6 @@
     margin-top: 10px;
     position: relative;
     z-index: 1;
-    /* Adjust z-index */
 }
 
 input,
@@ -20,9 +19,6 @@ textarea {
     outline: none;
     border-radius: 8px;
     margin-top: 1rem;
-    width: 35rem;
-    position: relative;
-    z-index: 1;
     padding: 0.5rem;
 }
 
@@ -31,7 +27,6 @@ textarea {
 }
 
 .contact-button {
-    
     padding: 10px 20px;
     background-color: #7A003B;
     color: #ffffff;
@@ -43,5 +38,16 @@ textarea {
     margin-top: 1.5em;
     z-index: 1;
     font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
     
+}
+
+.contact-button:hover {
+    background-color: #29001E;
+}
+
+.contact-button:active {
+    transform: translateY(-4px);
 }

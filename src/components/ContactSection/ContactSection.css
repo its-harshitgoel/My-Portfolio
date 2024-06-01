@@ -131,6 +131,37 @@
     position: relative;
     z-index: 1;
     width: 35rem;
+    transition: transform 0.3s ease;
+}
+
+.contact_element:hover {
+    transform: rotate(-2deg);
+}
+
+
+.contact-button {
+    padding: 10px 20px;
+    background-color: #7A003B;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    height: 3.5em;
+    width: 40%;
+    margin-top: 1.5em;
+    z-index: 1;
+    font-size: 1.2rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #3c012c;
+}
+
+.contact-button:active {
+    transform: translateY(-2px);
 }
 
 /* Responsive styles */
