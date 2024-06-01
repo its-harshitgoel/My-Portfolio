@@ -5,10 +5,6 @@ import { loadSlim } from "tsparticles-slim";
 const ParticleBackground = () => {
   const particlesInit = useCallback(async engine => {
     console.log(engine);
-    // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
-    //await loadFull(engine);
     await loadSlim(engine);
   }, []);
 
@@ -26,7 +22,7 @@ const ParticleBackground = () => {
                         value: "#02001E",
                     },
                 },
-                fpsLimit: 180,
+                fpsLimit: 1000,
                 interactivity: {
                     events: {
                         onClick: {
@@ -51,13 +47,13 @@ const ParticleBackground = () => {
                 },
                 particles: {
                     color: {
-                        value: "ffff00",
+                        value: "#FAB607",
                     },
                     links: {
                         color: "#ffffff",
                         distance: 120,
                         enable: true,
-                        opacity: 0.67,
+                        opacity: 0.17,
                         width: 1,
                     },
                     move: {
@@ -84,7 +80,7 @@ const ParticleBackground = () => {
                         type: "circle",
                     },
                     size: {
-                        value: { min: 1, max: 4 },
+                        value: { min: 1, max: 5 },
                     },
                 },
                 detectRetina: true,

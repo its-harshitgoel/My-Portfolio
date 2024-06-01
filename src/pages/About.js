@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/About.css";
-import profile from "../utils/home-profile2.jpg";
+import profile from "../utils/profile-photo.png";
 
 
 const About = () => {
@@ -8,12 +8,11 @@ const About = () => {
     <div className="center">
       <div className="container">
         <div className="section">
-          <h2 className="sub-heading">ABOUT</h2>
           <div className="about-content">
             <img
               src={profile}
               alt="profile-image"
-              className="profile-image"
+              className="profile-about"
             />
             <div className="text-content">
               <h1 className="heading">👋 Hey there</h1>

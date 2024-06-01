@@ -4,6 +4,8 @@ import '../styles/Home.css';
 import profile from '../utils/home-profile2.jpg';
 import Type from '../components/Type';
 import '../styles/SocialMedia.css';
+import SocialMedia from '../components/SocialMedia';
+
 
 
 function Home() {
@@ -30,40 +32,8 @@ function Home() {
               </h1>
             </div>
           </div>
-          <div className="home-about-social">
-            <div className="wrapper">
-              <div className="button">
-                <div className="icon">
-                  <i className="fab fa-facebook-f"></i>
-                </div>
-                <span>Facebook</span>
-              </div>
-              <div className="button">
-                <div className="icon">
-                  <i className="fa-brands fa-x-twitter"></i>
-                </div>
-                <span>Twitter</span>
-              </div>
-              <div className="button">
-                <div className="icon">
-                  <i className="fab fa-instagram"></i>
-                </div>
-                <span>Instagram</span>
-              </div>
-              <div className="button">
-                <div className="icon">
-                  <i className="fab fa-github"></i>
-                </div>
-                <span>Github</span>
-              </div>
-              <div className="button">
-                <div className="icon">
-                  <i className="fab fa-youtube"></i>
-                </div>
-                <span>YouTube</span>
-              </div>
-            </div>
-          </div>
+
+          <SocialMedia />
         </div>
       </div>
     </div>

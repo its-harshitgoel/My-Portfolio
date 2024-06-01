@@ -13,7 +13,7 @@ const Navbar = () => {
       <div>
         <ul id="navbar">
           <li>
-            <Link className={location.pathname === '/' ? 'active' : ''} to="/">Home</Link>
+            <Link className={location.pathname === '/' } to="/">Home</Link>
           </li>
           <li>
             <Link className={location.pathname === '/about' ? 'active' : ''} to="/about">About</Link>

@@ -32,36 +32,31 @@
   flex-direction: column;
   height: 100%;
   width: 100%;
-  position: relative; /* Added position relative */
+  position: relative; 
 }
 
 .profile-image {
   object-fit: cover;
-  width: 13rem;
-  height: 13rem;
-  margin-top: 5rem;
+  width: 20rem;
+  height: 20rem;
   margin-bottom: 1rem;
-  border-radius: 30rem;
+  border-radius: 50%;
 }
+  
+
 
 .home-down {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-
   gap: 1rem;
-
-  top: 0;
-  left: 0;
+  top: 0; 
+  left: 0; 
   width: 100%;
-  /* height: 100%; */
-  z-index: 2; /* Ensure it's above content */
+  z-index: 2;
 }
 
-.home-text > *, .home-down > * > * {
-  margin: 0;
-}
 
 .home-text h1 {
   position: relative;
@@ -69,7 +64,6 @@
   font-size: 2rem;
   font-weight: 700;
   color: #64fddb;
-  z-index: 3;
 }
 .heading-name .main-name {
   font-size: 4rem;
@@ -80,19 +74,15 @@
   letter-spacing: 0.07em; 
 }
 
-
-
 .type-container  {
   font-size: 3;
   font-weight: 500;
   color: #fff;
   z-index: 3;
   margin-bottom: 3%;
-  padding: 1rem;
 }
 .type-container strong {
-  padding: rem;
-  color: yellow;
+  color: #FAB607;
   font-size: 3;
   font-weight: 700;
   display: inline-block;
@@ -100,66 +90,7 @@
 
 .home-about-social {
   text-align: center;
-  padding-top: 25px;
   color: white;
 }
 
-.home-about-social-links {
-  justify-content: center;
-  padding-top: 15px;
-  display: inline-block;
-  position: relative;
-  padding-inline-start: 0;
-}
 
-.home-social-icons {
-  position: relative;
-  display: inline-block;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  font-size: 1.2em;
-  line-height: 2em;
-  background: rgba(255, 255, 255, 0.972);
-  border-radius: 50%;
-  transition: 0.5s;
-}
-
-.home-social-icons::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background: #68187a;
-  transition: 0.5s;
-  transform: scale(0.9);
-  z-index: -1;
-}
-
-.home-social-icons:hover::before {
-  transform: scale(1.1);
-  box-shadow: 0 0 15px #801f95;
-}
-
-.home-social-icons:hover {
-  color: #87209e;
-  box-shadow: 0 0 5px #87209e;
-  text-shadow: 0 0 2px #87209e;
-}
-
-.social-icons {
-  display: inline-block;
-  padding-right: 15px;
-  padding-left: 15px;
-}
-
-.icon-colour {
-  color: #7f6286;
-}
-
-.purple {
-  color: #87209e;
-}
