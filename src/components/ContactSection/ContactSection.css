@@ -1,0 +1,179 @@
+/* Base styles */
+
+.ParticleBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.contactSection {
+    margin-top: 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 1;
+}
+
+.contact-container {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    z-index: 2;
+}
+
+.section-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.section-title p {
+    font-size: 4rem;
+    font-weight: 1000;
+    color: #FF0045;
+    z-index: 1;
+    font-family: "Black Ops One";
+    letter-spacing: 0.1rem;
+}
+
+.section-title h2 {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #FFFFFF;
+    z-index: 1;
+    font-family: "Black Ops One";
+}
+
+.contactSection__wrapper {
+    display: flex;
+    gap: 20rem;
+    margin-top: 5rem;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+    z-index: 1;
+}
+
+.contactSection__wrapper::after {
+    content: '';
+    width: 2px;
+    height: 90%;
+    background-color: #ccc;
+    left: 50%;
+    top: 15%;
+    transform: translate(-50%, -15%);
+    position: absolute;
+    z-index: -1;
+}
+
+.left {
+    flex: 1;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.contact-info-item {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_icon {
+    font-size: 2.5rem;
+    color: #29001E;
+    margin-right: 1rem;
+}
+
+.contact_info {
+    display: flex;
+    align-items: center;
+    font-size: 1.1rem;
+    color: #29001E;
+}
+
+.right {
+    border-radius: 12px;
+    background-color: #FF0045;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.contact_element {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    margin-bottom: 1rem;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    position: relative;
+    z-index: 1;
+    width: 35rem;
+}
+
+/* Responsive styles */
+
+@media (max-width: 1024px) {
+    .contactSection__wrapper {
+        gap: 10rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .contactSection__wrapper {
+        flex-direction: column;
+        gap: 5rem;
+    }
+    
+    .section-title p {
+        font-size: 3rem;
+    }
+    
+    .section-title h2 {
+        font-size: 1.5rem;
+    }
+    
+    .contact-element {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .contactSection {
+        margin-top: 6rem;
+    }
+    
+    .section-title p {
+        font-size: 2.5rem;
+    }
+    
+    .section-title h2 {
+        font-size: 1.2rem;
+    }
+    
+    .contact-element {
+        width: 100%;
+    }
+}

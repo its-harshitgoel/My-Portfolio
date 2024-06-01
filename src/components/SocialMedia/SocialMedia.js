@@ -1,5 +1,6 @@
 import React from 'react';
 import { SiLeetcode } from 'react-icons/si';
+import './SocialMedia.css';
 
 function SocialMedia() {
 
