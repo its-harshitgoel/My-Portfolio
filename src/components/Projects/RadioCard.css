@@ -1,0 +1,15 @@
+.radio-card {
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+    border: 1px solid gray;
+    border-radius: 0.25rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .radio-card.selected {
+    border-color: blue;
+    background-color: lightblue;
+  }
+  
