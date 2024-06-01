@@ -2,7 +2,7 @@ export const projectsData = [
     {
         title: "Portfolio Website",
         image: "my-portfolio",
-        link: "https://harshitgoel.vercel.app/",
+        link: "",
         source: "https://github.com/its-harshitgoel/My-Portfolio",
         type: "WEB-APP"
     },
