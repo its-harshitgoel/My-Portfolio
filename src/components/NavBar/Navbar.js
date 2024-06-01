@@ -7,8 +7,9 @@ const Navbar = () => {
 
   return (
     <nav className="navbar">
-      <a className="harshit-goel">
-        HARSHIT GOEL {"</>"}
+      <a>
+        <Link to="/" className="harshit-goel">
+          HARSHIT GOEL {"</>"}</Link>
       </a>
       <div>
         <ul id="navbar">
