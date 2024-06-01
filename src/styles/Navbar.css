@@ -1,35 +1,38 @@
-nav{
+nav {
     position: fixed;
-    top: 0%;
-    left: 0%;
+    top: 0;
+    left: 0;
     width: 100%;
     box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #1b2430;
     padding: 20px 80px;
-    box-shadow: 0 5px 15pxrgba(0, 0, 0, 0.06);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
     z-index: 2;
+    background-color: rgba(0, 0, 0, 0.5);
 }
-.hs{
+
+.harshit-goel {
     color: #fff;
     font-size: 1.5rem;
     font-weight: 600;
     text-decoration: none;
-    transition: all 0.3s ease-in-out;
+    transition: color 0.3s ease-in-out; 
 }
-.hs:hover{
-    color: #17cf97;
+
+.harshit-goel:hover {
+    color: #00FF77;
+    cursor: pointer;
 }
-#navbar{
+
+#navbar {
     display: flex;
     align-items: center;
     justify-content: center;
-
 }
+
 #navbar li {
-    list-style: none;
     padding: 0 20px;
     position: relative;
 }
@@ -39,24 +42,27 @@ nav{
     color: #fff;
     font-size: 1.3rem;
     font-weight: 600;
-    transition: all 0.3s ease-in-out;
-   
+    position: relative; 
+    transition: color 0.3s ease-in-out; 
 }
 
+#navbar li a::after {
+    content: '';
+    width: 0; 
+    height: 2px;
+    background-color: #00FF77;
+    position: absolute;
+    bottom: -4px;
+    left: 0%; 
+    transition: width 0.3s ease; 
+}
+
+#navbar li a:hover::after,
+#navbar li a.active::after {
+    width: 100%; 
+}
 
 #navbar li a:hover,
 #navbar li a.active {
-    color: #17cf97;
-}
-#navbar li a:hover::after ,
-#navbar li a.active::after {
-    content: '';
-    width: 40%;
-    height: 2px;
-    background-color: #17cf97;
-    position: absolute;
-    bottom: -4px;
-    left: 20px;
-    transition: width 0.3s ease;
-
+    color: #00FF77;
 }

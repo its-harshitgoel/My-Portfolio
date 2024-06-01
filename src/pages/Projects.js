@@ -1,7 +1,13 @@
 import React from 'react';
+import ParticleBackground from '../components/ParticleBackground';
 
 function Projects() {
-  return <div>Projects Page</div>;
+
+  return (
+    <ParticleBackground />
+
+  )
+  
 }
 
 export default Projects;

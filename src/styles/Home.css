@@ -1,6 +1,4 @@
-*{
-  background-color: #1b2430;
-}
+
 #tsparticles {
   position: fixed;
   top: 0;
@@ -70,15 +68,20 @@
   text-align: center;
   font-size: 2rem;
   font-weight: 700;
-  color: #69d6bf;
+  color: #64fddb;
   z-index: 3;
 }
-.heading-name {
-  font-size: 3rem;
-  font-weight: 700;
+.heading-name .main-name {
+  font-size: 4rem;
+  font-weight: 1000;
   color: #fff;
   z-index: 3;
+  font-family: "Black Ops One";
+  letter-spacing: 0.07em; 
 }
+
+
+
 .type-container  {
   font-size: 3;
   font-weight: 500;
@@ -160,4 +163,3 @@
 .purple {
   color: #87209e;
 }
-
