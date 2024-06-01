@@ -5,7 +5,7 @@ import './ProjectCard.css';
 const ProjectCard = ({ data }) => {
   const { title, image, link, source } = data;
   const [showHover, setShowHover] = useState(false);
-  const imageUrl = `/images/${image}.png`; // Adjust the path as needed
+  const imageUrl = `/images/${image}.png`;
 
   return (
     <div
