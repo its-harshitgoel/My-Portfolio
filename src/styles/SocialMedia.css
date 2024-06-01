@@ -44,6 +44,7 @@ a {
 
 .wrapper .button .icon {
     display: flex;
+    
     align-items: center;
     justify-content: center;
     height: 70px;

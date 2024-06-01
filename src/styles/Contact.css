@@ -1,0 +1,13 @@
+.contact-text {
+    margin-top: 5rem;
+    position: relative;
+    z-index: 1;
+    height: 100%;
+}
+.social-media .wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}

@@ -4,6 +4,8 @@ import profile from '../utils/home-profile2.jpg';
 import CV from "../utils/resume-sample.pdf"
 import Info from "../components/About/info";
 import ParticleBackground from "../components/ParticleBackground";
+import { GrDocumentText } from "react-icons/gr";
+
 
 const About = () => {
 return (
@@ -21,7 +23,12 @@ return (
         crafting seamless user experiences and robust backend solutions.
         </p>
      
-      <a download="" href={CV} class="button button--flex">Download CV</a>
+        <a download="" href={CV} class="CVbutton button--flex">
+          <GrDocumentText class="Documenticon" />
+          <span class="CVtext">Download CV</span> 
+        </a>
+        
+        
 
     </div>
 

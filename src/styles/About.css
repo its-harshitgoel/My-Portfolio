@@ -24,7 +24,6 @@
   z-index: 1;
   font-family: "Black Ops One";
   letter-spacing: 0.1rem;
-
 }
 
 .section__subtitle {
@@ -47,12 +46,11 @@
 }
 
 .about__img {
-  width: 350px;
+  width: 100%;
+  max-width: 350px;
   border-radius: 1.5rem;
   justify-self: center;
   pointer-events: none;
-
-
 }
 
 .about_data {
@@ -97,15 +95,13 @@
     transform: translateX(-100%);
     opacity: 0;
   }
-
   to {
     transform: translateX(0);
     opacity: 5;
   }
 }
 
-
-.button {
+.CVbutton {
   display: inline-block;
   padding: 10px 20px;
   background-color: #7A003B;
@@ -122,7 +118,7 @@
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
-.button:hover {
+.CVbutton:hover {
   background-color: #3c012c;
   transform: translateY(-5px);
 }
@@ -139,4 +135,82 @@
   font-size: 1.5rem;
   z-index: 1;
   color: #ffffff;
+}
+
+.CVtext {
+  margin-left: 5px;
+}
+
+@media (max-width: 1024px) {
+  .about__container {
+    width: 80%;
+  }
+
+  .about__info {
+    grid-template-columns: repeat(3, 120px);
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .section__title {
+    font-size: 3rem;
+  }
+
+  .section__subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .about__container {
+    grid-template-columns: 1fr;
+    width: 90%;
+    row-gap: 2rem;
+  }
+
+  .about__info {
+    grid-template-columns: repeat(2, 120px);
+    gap: 2rem;
+  }
+
+  .about__box {
+    width: 10em;
+  }
+
+  .CVbutton {
+    width: 12em;
+    font-size: 1rem;
+  }
+
+  .about__description {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .section__title {
+    font-size: 2.5rem;
+  }
+
+  .section__subtitle {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+  }
+
+  .about__info {
+    grid-template-columns: 1fr;
+  }
+
+  .about__box {
+    width: 100%;
+  }
+
+  .CVbutton {
+    width: 100%;
+    font-size: 1rem;
+  }
+
+  .about__description {
+    font-size: 1rem;
+  }
 }
