@@ -1,45 +1,37 @@
-import React from "react";
+import React from 'react';
 import "../styles/About.css";
-import profile from "../utils/profile-photo.png";
-
+import profile from '../utils/home-profile2.jpg';
+import CV from "../utils/resume-sample.pdf"
+import Info from "../components/About/info";
+import ParticleBackground from "../components/ParticleBackground";
 
 const About = () => {
-  return (
-    <div className="center">
-      <div className="container">
-        <div className="section">
-          <div className="about-content">
-            <img
-              src={profile}
-              alt="profile-image"
-              className="profile-about"
-            />
-            <div className="text-content">
-              <h1 className="heading">👋 Hey there</h1>
-              <p className="description">
-                I'm <span className="name">Harshit Goel</span>, a passionate
-                software developer. I specialize in{" "}
-                <span className="tech">Web Development</span>, crafting seamless
-                user experiences and robust backend solutions. With a knack for
-                problem-solving, I thrive on creating elegant code that makes
-                an impact. I'm always exploring new tools and techniques to
-                stay at the forefront of the ever-evolving tech landscape.
-              </p>
-              <p className="description">
-                📫 Open to collaborations and exciting projects, I'm eager to
-                connect with fellow developers and tech enthusiasts. Let's
-                build something amazing together!
-              </p>
-              <p className="description">
-                Happy coding! 🖥️
-                <br />
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
+return (
+  <section className='about section' id="about">
+  <ParticleBackground />
+  <h2 class="section__title">About Me</h2>
+  <span class="section__subtitle">My Information</span>
 
-export default About;
+  <div class="about__container container grid">
+    <img src={profile} alt="" class="about__img"></img>
+
+    <div class="about_data">
+      <Info />
+      <p class="about__description">I'm Harshit, a passionate software developer. I specialize in Web Development,
+        crafting seamless user experiences and robust backend solutions.
+        </p>
+     
+      <a download="" href={CV} class="button button--flex">Download CV</a>
+
+    </div>
+
+  </div>
+</section>
+
+
+
+
+)
+}
+
+export default About

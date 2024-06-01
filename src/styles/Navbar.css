@@ -10,10 +10,7 @@ nav {
     padding: 20px 80px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
     z-index: 2;
- 
     background-color: rgba(9, 21, 44, 0.7); 
-
-
 }
 
 .harshit-goel {
@@ -39,7 +36,6 @@ nav {
     padding: 0 20px;
     position: relative;
     list-style-type: none;
-
 }
 
 #navbar li a {
@@ -63,11 +59,12 @@ nav {
 }
 
 #navbar li a:hover::after,
-#navbar li a.active::after {
+#navbar li a.active::after{
     width: 100%; 
+    color: #00FF77;
 }
 
-#navbar li a:hover,
+#navbar li a:hover 
 #navbar li a.active {
-    color: #00FF77;
+    color: #00FF77; 
 }

@@ -1,68 +1,120 @@
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: black;
+.ParticleBackground {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
 
-  }
+.section {
+  position: relative;
+  padding: 4rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.section__title {
+  font-size: 4rem;
+  font-weight: 1000;
+  color: #FF0045;
+  z-index: 1;
+  font-family: "Black Ops One";
+  letter-spacing: 0.1rem;
   
-  .container {
-    width: 80vw;
-    color:#f0f0f0;
-    font-size: larger;
-    background-color: black;
-  }
-  
-  .section {
-    margin-bottom: 4rem;
-  }
-  .heading{
-    margin-bottom: 2rem;
-  }
-  
-  .sub-heading {
-    margin-top: 1.5rem;
-  }
-  
-  .about-content {
-    display: flex;
-    margin: 10em;
-    justify-content: center;
-    align-items: center;
-  }
-  
-  .profile-about {
-    width: 20rem;
-    height: 20rem;
-    margin-bottom: 1rem;
-    border-radius: 1rem;
-  }
-  
-  .text-content {
-    margin-left: 2rem;
-  }
-  
-  .interests-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
-    gap: 1rem;
-  }
-  
-  .interests-card {
-    background-color: #f0f0f0;
-    padding: 1rem;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .icon {
-    width: 50px;
-    height: 50px;
-  }
-  
-  .interest {
-    font-size: 1.1rem;
-  }
-  
+}
+
+.section__subtitle {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin-bottom: 4rem;
+  z-index: 1;
+  font-family: "Black Ops One";
+}
+
+.about__container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  column-gap: 1rem;
+  width: 60%;
+  z-index: 1;
+}
+
+.about__img {
+  width: 350px;
+  border-radius: 1.5rem;
+  justify-self: center;
+  pointer-events: none;
+
+
+}
+
+.about_data {
+  z-index: 1;
+}
+
+.about__info {
+  display: grid;
+  grid-template-columns: repeat(3, 140px);
+  gap: 3rem;
+  margin-bottom: 20px;
+}
+.about__box {
+  background-color: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 0.75rem;
+  text-align: center;
+  padding: 1.5rem 1.25rem;
+  width: 11em;
+  z-index: 1;
+  color: #29001E;
+  transition: transform 0.3s ease; 
+}
+
+.about__box:hover {
+  transform: scale(0.95); 
+  cursor: pointer;
+}
+
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #7A003B;
+  color: #ffffff;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  height: 3.5em;
+  width: 15em;
+  margin-top: 2em;
+  z-index: 1;
+  font-size: 1.2rem;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+  background-color: #3c012c;
+  transform: translateY(-5px);
+}
+
+.button--flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about__description {
+  padding: 0.8rem 1rem 0 0;
+  margin-bottom: 2.5rem;
+  font-size: 1.5rem;
+  z-index: 1;
+  color: #ffffff;
+}

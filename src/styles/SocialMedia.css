@@ -54,7 +54,7 @@ a {
 }
 
 .wrapper a:nth-child(1) .button:hover .icon {
-    background-color: black;
+    background-color: #000;
     color: #FFA116;
 }
 
@@ -106,8 +106,7 @@ a {
 
 .wrapper a:nth-child(1) .button span,
 .wrapper a:nth-child(1) .button .icon {
-    color: #FFA116;
-    text-shadow: #333;
+    color: #000;
 }
 
 .wrapper a:nth-child(2) .button span,
