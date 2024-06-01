@@ -1,5 +1,5 @@
 import React from 'react';
-import ParticleBackground from '../components/ParticleBackground';
+import ParticleBackground from '../components/ParticleBackground/ParticleBackground';
 
 function Projects() {
 

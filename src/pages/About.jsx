@@ -3,7 +3,7 @@ import "../styles/About.css";
 import profile from '../utils/home-profile2.jpg';
 import CV from "../utils/resume-sample.pdf"
 import Info from "../components/About/info";
-import ParticleBackground from "../components/ParticleBackground";
+import ParticleBackground from "../components/ParticleBackground/ParticleBackground";
 import { GrDocumentText } from "react-icons/gr";
 
 

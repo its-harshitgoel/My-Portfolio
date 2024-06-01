@@ -1,10 +1,9 @@
 import React from 'react';
-import ParticleBackground from '../components/ParticleBackground';
+import ParticleBackground from '../components/ParticleBackground/ParticleBackground';
 import '../styles/Home.css';
 import profile from '../utils/home-profile2.jpg';
-import Type from '../components/Type';
-import '../styles/SocialMedia.css';
-import SocialMedia from '../components/SocialMedia';
+import Type from '../components/Home/Type';
+import SocialMedia from '../components/SocialMedia/SocialMedia';
 
 
 
