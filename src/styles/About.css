@@ -24,7 +24,7 @@
   z-index: 1;
   font-family: "Black Ops One";
   letter-spacing: 0.1rem;
-  
+
 }
 
 .section__subtitle {
@@ -65,8 +65,9 @@
   gap: 3rem;
   margin-bottom: 20px;
 }
+
 .about__box {
-  background-color: rgba(255, 255, 255, 0.85);
+  background-color: white;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 0.75rem;
   text-align: center;
@@ -74,12 +75,33 @@
   width: 11em;
   z-index: 1;
   color: #29001E;
-  transition: transform 0.3s ease; 
+  transition: transform 0.3s ease;
+  animation: slideFromLeft 0.5s ease-in-out forwards;
+  opacity: 0;
+}
+
+.about__box:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.about__box:nth-child(3) {
+  animation-delay: 0.4s;
 }
 
 .about__box:hover {
-  transform: scale(0.95); 
   cursor: pointer;
+}
+
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0);
+    opacity: 5;
+  }
 }
 
 
