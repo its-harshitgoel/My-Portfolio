@@ -1,9 +1,27 @@
 import { FaPython, FaJs, FaHtml5, FaSlack, FaCss3Alt, FaLinux, FaUbuntu, FaGithub, FaReact, FaNodeJs, FaGitAlt, FaDatabase, FaJava, FaAws } from "react-icons/fa";
-import { SiCanva, SiGooglecolab, SiDjango, SiSpringboot, SiMysql } from "react-icons/si";
+import { SiCanva, SiGooglecolab, SiDjango, SiSpringboot, SiMysql,SiLeetcode,SiInstagram, SiYoutube} from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
 import { FiAward, FiBriefcase } from "react-icons/fi";
-import { RiGraduationCapLine } from "react-icons/ri";
+import { RiGraduationCapLine,RiTwitterXFill, RiLinkedinBoxFill } from "react-icons/ri";
+import { IoIosMail, IoIosCall, IoIosPin } from "react-icons/io";
 
+
+
+
+export const CONTACT_INFO = [
+    {
+        icon: <IoIosMail />,
+        text: 'its.harshitgoel@gmail.com'
+    },
+    {
+        icon: <IoIosCall />,
+        text: '+91 94513xxxxx'
+    },
+    {
+        icon: <IoIosPin />,
+        text: 'Bengaluru, India'
+    }
+];
 
 export const skillsData = [
     { name: "Python", icon: <FaPython size="55px" /> },
@@ -71,18 +89,27 @@ export const projectsData = [
 
 export const INFO_DATA = [
     {
-        icon: <FiAward/>,
+        icon: <FiAward />,
         title: 'Experience',
         subtitle: 'Fresher'
     },
     {
-        icon: <FiBriefcase/>,
+        icon: <FiBriefcase />,
         title: 'Completed',
         subtitle: '5+ Projects'
     },
     {
-        icon: <RiGraduationCapLine/>,
+        icon: <RiGraduationCapLine />,
         title: 'Education',
         subtitle: 'Scaler School Of Technology'
     }
+];
+
+export const SOCIAL_MEDIA_LINKS = [
+    { name: 'Leetcode', link: 'https://www.leetcode.com/', icon: <SiLeetcode/> },
+    { name: 'Twitter', link: 'https://www.twitter.com/', icon: <RiTwitterXFill/> },
+    { name: 'Instagram', link: 'https://www.instagraSiLinkedinm.com/', icon: <SiInstagram/> },
+    { name: 'Github', link: 'https://www.github.com/', icon: <FaGithub/> },
+    { name: 'YouTube', link: 'https://www.youtube.com/', icon: <SiYoutube/> },
+    { name: 'LinkedIn', link: 'https://www.linkedin.com/', icon: <RiLinkedinBoxFill/> }
 ];
