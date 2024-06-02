@@ -1,6 +1,8 @@
 import { FaPython, FaJs, FaHtml5, FaSlack, FaCss3Alt, FaLinux, FaUbuntu, FaGithub, FaReact, FaNodeJs, FaGitAlt, FaDatabase, FaJava, FaAws } from "react-icons/fa";
-import { SiCanva,SiGooglecolab,SiDjango, SiSpringboot,SiMysql} from "react-icons/si";
+import { SiCanva, SiGooglecolab, SiDjango, SiSpringboot, SiMysql } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
+import { FiAward, FiBriefcase } from "react-icons/fi";
+import { RiGraduationCapLine } from "react-icons/ri";
 
 
 export const skillsData = [
@@ -65,4 +67,22 @@ export const projectsData = [
         source: "https://github.com/its-harshitgoel/Kanban-Board",
         type: "WEB-APP"
     },
+];
+
+export const INFO_DATA = [
+    {
+        icon: <FiAward/>,
+        title: 'Experience',
+        subtitle: 'Fresher'
+    },
+    {
+        icon: <FiBriefcase/>,
+        title: 'Completed',
+        subtitle: '5+ Projects'
+    },
+    {
+        icon: <RiGraduationCapLine/>,
+        title: 'Education',
+        subtitle: 'Scaler School Of Technology'
+    }
 ];

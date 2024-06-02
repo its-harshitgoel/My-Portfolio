@@ -1,17 +1,15 @@
+.about__title {
+  font-size: 1.4rem; 
+  font-weight: bold; 
+}
 
-  .about__title {
-    font-size: 1.4rem; 
-    font-weight: bold; 
-  }
-  
-  .about__subtitle {
-    color: #7A003B;
-    font-size: 0.8rem; /* Adjust as needed */
-  }
-  
-  .icons {
-    color: #000; /* Adjust as needed */
-    margin-bottom: 10px; /* Adjust as needed */
-    font-size: 30px;
-  }
-  
+.about__subtitle {
+  color: #7A003B;
+  font-size: 0.8rem; 
+}
+
+.icons-info {
+  margin-bottom: 10px; 
+  font-size: 2rem;
+  color: #02001E;
+}

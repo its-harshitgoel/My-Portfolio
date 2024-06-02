@@ -38,7 +38,7 @@ const ContactSection = () => {
                                 <div className="contact_icon"><IoIosPin />
                                 </div>
                                 <div className="contact_info">
-                                    <p>Prayagraj, India</p>
+                                    <p>Bengaluru, India</p>
                                 </div>
                             </div>
                         </div>
