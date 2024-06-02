@@ -1,3 +1,19 @@
+import { FaPython, FaJs, FaHtml5, FaCss3Alt, FaReact, FaNodeJs, FaDocker, FaGitAlt, FaDatabase } from "react-icons/fa";
+
+export const skillsData = [
+  { name: "Python", icon: <FaPython size="55px" /> },
+  { name: "JavaScript", icon: <FaJs size="55px" /> },
+  { name: "HTML", icon: <FaHtml5 size="55px" /> },
+  { name: "CSS", icon: <FaCss3Alt size="55px" /> },
+  { name: "React", icon: <FaReact size="55px" /> },
+  { name: "Node.js", icon: <FaNodeJs size="55px" /> },
+  { name: "Docker", icon: <FaDocker size="55px" /> },
+  { name: "Git", icon: <FaGitAlt size="55px" /> },
+  { name: "Databases", icon: <FaDatabase size="55px" /> },
+];
+
+
+
 export const projectsData = [
     {
         title: "Portfolio Website",

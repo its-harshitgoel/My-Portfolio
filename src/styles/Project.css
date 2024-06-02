@@ -20,6 +20,7 @@
 
 .projects-content {
   width: 80vw;
+  z-index: 1; 
 }
 
 .projects-heading {
@@ -29,6 +30,7 @@
   color: #FF0045;
   font-family: "Black Ops One";
   letter-spacing: 0.1rem;
+  z-index: 1; 
 }
 
 .radio-group {
