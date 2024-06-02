@@ -1,24 +1,24 @@
-.ParticleBackground {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-}
-
 .skills-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4rem 0;
+    margin-top: 4rem;
+    position: relative; 
+    z-index: 1; 
+
+    
+  
+  }
+  .skills-heading-container{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 80vh;
-    width: 100vw;
     z-index: 1;
-
-}
-
-.skills-heading {
+  }
+  .skills-heading {
     z-index: 1;
     text-align: center;
     font-size: 4rem;
@@ -26,22 +26,30 @@
     color: #FF0045;
     font-family: "Black Ops One";
     letter-spacing: 0.1rem;
-}
-
-.skills-grid {
-    display: flex;
+  }
+  
+  .skills-subheading {
+    font-size: 2rem;
+    font-weight: 500;
+    color: #FFFFFF;
+    margin-bottom: 4rem;
+    z-index: 1;
+    font-family: "Black Ops One";
+  }
+  
+  .skills-grid {
+    display: grid;
     grid-template-columns: repeat(auto-fill, minmax(135px, 1fr));
-    gap: 1rem;
-    width: 100vw;
-    margin-top: 4rem;
+    gap: 2rem;
+    width: 90vw;
+    margin: 4rem;
     padding-bottom: 2rem;
     z-index: 1;
     align-items: center;
     justify-content: center;
-
-}
-
-.skill-card {
+  }
+  
+  .skill-card {
     height: 150px;
     width: 150px;
     background-color: rgba(255, 255, 255, 0.1);
@@ -54,32 +62,81 @@
     padding: 1rem;
     border-radius: 8px;
     z-index: 1;
-}
-
-.skill-card:hover {
+  }
+  
+  .skill-card:hover {
     cursor: pointer;
     background-color: #02001E;
     transform: scale(1.05);
-}
-
-.skill-icon {
+  }
+  
+  .skill-icon {
     margin-bottom: 1rem;
     z-index: 1;
     color: #FFFFFF;
-}
-
-.skill-name {
+  }
+  
+  .skill-name {
     color: #ffffff;
     font-size: 1.2rem;
     margin: 0;
     z-index: 1;
-}
-
-.skills-subheading {
-    font-size: 2rem;
-    font-weight: 500;
-    color: #FFFFFF;
-    margin-bottom: 4rem;
-    z-index: 1;
-    font-family: "Black Ops One";
-}
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 1024px) {
+    .skills-grid {
+      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+      margin: 2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .skills-heading {
+      font-size: 3rem;
+    }
+  
+    .skills-subheading {
+      font-size: 1.5rem;
+      margin-bottom: 3rem;
+    }
+  
+    .skills-grid {
+      margin: 2rem 0;
+    }
+  
+    .skill-card {
+      height: 120px;
+      width: 120px;
+    }
+  
+    .skill-name {
+      font-size: 1rem;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .skills-heading {
+      font-size: 2.5rem;
+    }
+  
+    .skills-subheading {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+  
+    .skills-grid {
+      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+      margin: 1rem 0;
+    }
+  
+    .skill-card {
+      height: 100px;
+      width: 100px;
+    }
+  
+    .skill-name {
+      font-size: 0.8rem;
+    }
+  }
+  

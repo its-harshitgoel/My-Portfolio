@@ -11,6 +11,8 @@ nav {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
     z-index: 2;
     background-color: rgba(9, 21, 44, 0.7); 
+    height: 7vh;
+
 }
 
 .harshit-goel {

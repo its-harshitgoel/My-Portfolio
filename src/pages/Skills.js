@@ -8,8 +8,10 @@ const Skills = () => {
     <>
       <ParticleBackground />
       <div className="skills-container">
-        <h1 className="skills-heading">SKILLS</h1>
-        <h3 className="skills-subheading">Technologies Used</h3>
+        <div className="skills-heading-container">
+          <h1 className="skills-heading">SKILLS</h1>
+          <h3 className="skills-subheading">Technologies Used</h3>
+        </div>
         <div className="skills-grid">
           {skillsData.map((data, index) => (
             <div className="skill-card" key={index}>
