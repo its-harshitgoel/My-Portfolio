@@ -106,10 +106,10 @@ export const INFO_DATA = [
 ];
 
 export const SOCIAL_MEDIA_LINKS = [
-    { name: 'Leetcode', link: 'https://www.leetcode.com/', icon: <SiLeetcode/> },
-    { name: 'Twitter', link: 'https://www.twitter.com/', icon: <RiTwitterXFill/> },
-    { name: 'Instagram', link: 'https://www.instagraSiLinkedinm.com/', icon: <SiInstagram/> },
-    { name: 'Github', link: 'https://www.github.com/', icon: <FaGithub/> },
-    { name: 'YouTube', link: 'https://www.youtube.com/', icon: <SiYoutube/> },
-    { name: 'LinkedIn', link: 'https://www.linkedin.com/', icon: <RiLinkedinBoxFill/> }
+    { name: 'Leetcode', link: 'https://leetcode.com/u/hashitgoel/', icon: <SiLeetcode/> },
+    { name: 'Twitter', link: 'https://x.com/_chuckheaded', icon: <RiTwitterXFill/> },
+    { name: 'Instagram', link: 'https://www.instagram.com/chuckheaded/', icon: <SiInstagram/> },
+    { name: 'Github', link: 'https://github.com/its-harshitgoel', icon: <FaGithub/> },
+    { name: 'YouTube', link: 'https://www.youtube.com/@harshitgoel7', icon: <SiYoutube/> },
+    { name: 'LinkedIn', link: 'https://www.linkedin.com/in/its-harshit-goel/', icon: <RiLinkedinBoxFill/> }
 ];
