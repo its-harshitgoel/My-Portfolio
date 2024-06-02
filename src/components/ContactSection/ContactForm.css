@@ -231,3 +231,9 @@ textarea {
 .contact-button:active {
     transform: translateY(-4px);
 }
+.contact-button.success {
+    background-color: green;
+}
+.contact-button.success:hover {
+    background-color: green;
+}
