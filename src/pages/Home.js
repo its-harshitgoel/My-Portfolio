@@ -18,7 +18,7 @@ function Home() {
           </div>
           <div className="home-down">
             <div className="home-text">
-              <h1>Hi, My name is</h1>
+              <h1>Hi, my name is</h1>
             </div>
             <div>
               <h1 className="heading-name">
@@ -31,7 +31,6 @@ function Home() {
               </h1>
             </div>
           </div>
-
           <SocialMedia />
         </div>
       </div>

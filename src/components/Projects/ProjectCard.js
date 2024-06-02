@@ -10,7 +10,9 @@ const ProjectCard = ({ data }) => {
   return (
     <div
       className="project-card"
-      onMouseEnter={() => setShowHover(true)}
+      onMouseEnter={() => 
+        setShowHover(true)
+      }
       onMouseLeave={() => setShowHover(false)}
     >
       <h3 className="project-title">{title}</h3>

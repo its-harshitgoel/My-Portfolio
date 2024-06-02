@@ -5,15 +5,13 @@
   width: 100%;
   height: 100%;
   z-index: 0;
-  /* Other properties for .ParticleBackground */
 }
 
 .project-card {
   position: relative;
   box-shadow: 0 10px 30px -10px black;
   margin-bottom: 20px;
-  z-index: 1; /* Move above .ParticleBackground */
-  /* Other properties for .project-card */
+  z-index: 1;
 }
 
 .project-title {
@@ -21,20 +19,17 @@
   margin-bottom: 5px;
   text-align: center;
   font-family: "Black Ops One";
-  color:white;
-  /* Other properties for .project-title */
+  color: white;
 }
 
 .project-image-container {
   position: relative;
-  /* Other properties for .project-image-container */
 }
 
 .project-image {
   object-fit: cover;
   width: 100%;
   height: 13rem;
-  /* Other properties for .project-image */
 }
 
 .project-hover {
@@ -42,23 +37,26 @@
   top: 0;
   width: 100%;
   height: 13rem;
-  background-color: rgba(0, 0, 0, 0.5);
   display: flex;
   align-items: center;
   justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out, background-color 10s ease-in-out;
+}
+
+.project-card:hover .project-hover {
   opacity: 1;
-  transition: opacity 0.3s ease-in-out;
-  /* Other properties for .project-hover */
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .project-icon {
   font-size: 2.5rem;
   color: white;
   margin: 0 1rem;
-  /* Other properties for .project-icon */
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
-
-.project-hover a.clicked .project-icon {
-  /* Styles for clicked link */
+.project-icon:hover {
+  transform: scale(1.2);
+  color: #FAB607;
 }
