@@ -1,3 +1,4 @@
+/* Ensure cross-browser compatibility */
 .ParticleBackground {
   position: absolute;
   top: 0;
@@ -22,7 +23,7 @@
   font-weight: 1000;
   color: #FF0045;
   z-index: 1;
-  font-family: "Black Ops One";
+  font-family: "Black Ops One", sans-serif;
   letter-spacing: 0.1rem;
 }
 
@@ -32,7 +33,7 @@
   color: #FFFFFF;
   margin-bottom: 4rem;
   z-index: 1;
-  font-family: "Black Ops One";
+  font-family: "Black Ops One", sans-serif;
 }
 
 .about__container {
@@ -43,7 +44,6 @@
   column-gap: 1rem;
   width: 60%;
   z-index: 1;
-  
 }
 
 .about__img {
@@ -52,7 +52,6 @@
   border-radius: 1.5rem;
   justify-self: center;
   pointer-events: none;
-
 }
 
 .about_data {
@@ -64,7 +63,6 @@
   grid-template-columns: repeat(3, 140px);
   gap: 3rem;
   margin-bottom: 20px;
-
 }
 
 .about__box {
@@ -79,12 +77,10 @@
   transition: transform 0.3s ease;
   animation: slideFromLeft 0.5s ease-in-out forwards;
   opacity: 0;
-
 }
 
 .about__box:nth-child(2) {
   animation-delay: 0.2s;
-  
 }
 
 .about__box:nth-child(3) {
@@ -102,7 +98,7 @@
   }
   to {
     transform: translateX(0);
-    opacity: 5;
+    opacity: 1;
   }
 }
 
@@ -114,14 +110,12 @@
   text-decoration: none;
   border-radius: 5px;
   text-align: center;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
   height: 3.5em;
   width: 15em;
   margin-top: 2em;
   z-index: 1;
   font-size: 1.2rem;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  
 }
 
 .CVbutton:hover {
@@ -147,6 +141,7 @@
   margin-left: 5px;
 }
 
+/* Responsive adjustments */
 @media (max-width: 1024px) {
   .about__container {
     width: 80%;

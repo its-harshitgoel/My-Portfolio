@@ -7,12 +7,11 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 80px;
+    padding: 20px 5%; /* Adjust padding for responsiveness */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
     z-index: 2;
-    background-color: rgba(9, 21, 44, 0.7); 
+    background-color: rgba(9, 21, 44, 0.7);
     height: 7vh;
-
 }
 
 .harshit-goel {
@@ -20,7 +19,7 @@ nav {
     font-size: 1.5rem;
     font-weight: 600;
     text-decoration: none;
-    transition: color 0.3s ease-in-out; 
+    transition: color 0.3s ease-in-out;
 }
 
 .harshit-goel:hover {
@@ -45,28 +44,40 @@ nav {
     color: #fff;
     font-size: 1.3rem;
     font-weight: 600;
-    position: relative; 
-    transition: color 0.3s ease-in-out; 
+    position: relative;
+    transition: color 0.3s ease-in-out;
 }
 
 #navbar li a::after {
     content: '';
-    width: 0; 
+    width: 0;
     height: 2px;
     background-color: #00FF77;
     position: absolute;
     bottom: -4px;
-    left: 0%; 
-    transition: width 0.3s ease; 
+    left: 0%;
+    transition: width 0.3s ease;
 }
 
 #navbar li a:hover::after,
-#navbar li a.active::after{
-    width: 100%; 
+#navbar li a.active::after {
+    width: 100%;
     color: #00FF77;
 }
 
-#navbar li a:hover 
+#navbar li a:hover,
 #navbar li a.active {
-    color: #00FF77; 
+    color: #00FF77;
+}
+
+/* Adjust content area */
+.content {
+    padding-top: 7vh; /* Adjust according to your navigation bar height */
+}
+
+/* Responsive adjustments */
+@media screen and (max-width: 768px) {
+    nav {
+        padding: 20px 3%; /* Adjust padding for smaller screens */
+    }
 }

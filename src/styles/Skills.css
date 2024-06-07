@@ -1,142 +1,156 @@
+/* Skills Container */
 .skills-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 4rem 0;
-    margin-top: 4rem;
-    position: relative; 
-    z-index: 1; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 4rem 0;
+  margin-top: 4rem;
+  position: relative; 
+  z-index: 1; 
+}
 
-    
-  
-  }
-  .skills-heading-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    z-index: 1;
-  }
+/* Skills Heading Container */
+.skills-heading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+/* Skills Heading */
+.skills-heading {
+  z-index: 1;
+  text-align: center;
+  font-size: 4rem;
+  font-weight: 1000;
+  color: #FF0045;
+  font-family: "Black Ops One", sans-serif;
+  letter-spacing: 0.1rem;
+}
+
+/* Skills Subheading */
+.skills-subheading {
+  font-size: 2rem;
+  font-weight: 500;
+  color: #FFFFFF;
+  margin-bottom: 4rem;
+  z-index: 1;
+  font-family: "Black Ops One", sans-serif;
+}
+
+/* Skills Grid */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(135px, 1fr));
+  gap: 2rem;
+  width: 90vw;
+  margin: 4rem 0;
+  padding-bottom: 2rem;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Skill Card */
+.skill-card {
+  height: 150px;
+  width: 150px;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: all 0.2s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1rem;
+  border-radius: 8px;
+  z-index: 1;
+}
+
+.skill-card:hover {
+  cursor: pointer;
+  background-color: #02001E;
+  transform: scale(1.05);
+}
+
+/* Skill Icon */
+.skill-icon {
+  margin-bottom: 1rem;
+  z-index: 1;
+  color: #FFFFFF;
+}
+
+/* Skill Name */
+.skill-name {
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  margin: 0;
+  z-index: 1;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1024px) {
   .skills-heading {
-    z-index: 1;
-    text-align: center;
-    font-size: 4rem;
-    font-weight: 1000;
-    color: #FF0045;
-    font-family: "Black Ops One";
-    letter-spacing: 0.1rem;
+    font-size: 3rem;
   }
-  
+
   .skills-subheading {
-    font-size: 2rem;
-    font-weight: 500;
-    color: #FFFFFF;
-    margin-bottom: 4rem;
-    z-index: 1;
-    font-family: "Black Ops One";
+    font-size: 1.75rem;
   }
-  
+
   .skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(135px, 1fr));
-    gap: 2rem;
-    width: 90vw;
-    margin: 4rem;
-    padding-bottom: 2rem;
-    z-index: 1;
-    align-items: center;
-    justify-content: center;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    margin: 2rem 0;
   }
-  
+}
+
+@media (max-width: 768px) {
+  .skills-heading {
+    font-size: 2.5rem;
+  }
+
+  .skills-subheading {
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+  }
+
+  .skills-grid {
+    margin: 2rem 0;
+  }
+
   .skill-card {
-    height: 150px;
-    width: 150px;
-    background-color: rgba(255, 255, 255, 0.1);
-    transition: all 0.2s ease-in-out;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 1rem;
-    border-radius: 8px;
-    z-index: 1;
+    height: 120px;
+    width: 120px;
   }
-  
-  .skill-card:hover {
-    cursor: pointer;
-    background-color: #02001E;
-    transform: scale(1.05);
-  }
-  
-  .skill-icon {
-    margin-bottom: 1rem;
-    z-index: 1;
-    color: #FFFFFF;
-  }
-  
+
   .skill-name {
-    color: #ffffff;
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .skills-heading {
+    font-size: 2rem;
+  }
+
+  .skills-subheading {
     font-size: 1.2rem;
-    margin: 0;
-    z-index: 1;
+    margin-bottom: 2rem;
   }
-  
-  /* Responsive Adjustments */
-  @media (max-width: 1024px) {
-    .skills-grid {
-      grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
-      margin: 2rem;
-    }
+
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    margin: 1rem 0;
   }
-  
-  @media (max-width: 768px) {
-    .skills-heading {
-      font-size: 3rem;
-    }
-  
-    .skills-subheading {
-      font-size: 1.5rem;
-      margin-bottom: 3rem;
-    }
-  
-    .skills-grid {
-      margin: 2rem 0;
-    }
-  
-    .skill-card {
-      height: 120px;
-      width: 120px;
-    }
-  
-    .skill-name {
-      font-size: 1rem;
-    }
+
+  .skill-card {
+    height: 100px;
+    width: 100px;
   }
-  
-  @media (max-width: 480px) {
-    .skills-heading {
-      font-size: 2.5rem;
-    }
-  
-    .skills-subheading {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-    }
-  
-    .skills-grid {
-      grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
-      margin: 1rem 0;
-    }
-  
-    .skill-card {
-      height: 100px;
-      width: 100px;
-    }
-  
-    .skill-name {
-      font-size: 0.8rem;
-    }
+
+  .skill-name {
+    font-size: 0.8rem;
   }
-  
+}

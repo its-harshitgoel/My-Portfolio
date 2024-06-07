@@ -42,6 +42,9 @@
   justify-content: center;
   opacity: 0;
   transition: opacity 0.3s ease-in-out, background-color 10s ease-in-out;
+  -webkit-transition: opacity 0.3s ease-in-out, background-color 10s ease-in-out;
+  -moz-transition: opacity 0.3s ease-in-out, background-color 10s ease-in-out;
+  -o-transition: opacity 0.3s ease-in-out, background-color 10s ease-in-out;
 }
 
 .project-card:hover .project-hover {
@@ -54,9 +57,15 @@
   color: white;
   margin: 0 1rem;
   transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  -moz-transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .project-icon:hover {
   transform: scale(1.2);
   color: #FAB607;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -o-transform: scale(1.2);
 }
